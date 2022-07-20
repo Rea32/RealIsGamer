@@ -1,0 +1,109 @@
+body{
+    background-image: url("assets/background.jpg");
+    margin-top: 0px;
+}
+
+#all{
+    background-color: #fff;
+    margin: 3.2rem auto;
+    margin-top: 5px;
+    max-width: 1400px;
+    overflow: hidden;
+}
+
+header{
+    
+    height: 200px;
+    background-color:#B1B1B1;
+
+}
+header img{
+    height: 14vh;
+    width:6vw;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    background-color: #B1B1B1;
+}
+
+nav div{
+    width: 100px;
+    padding: 0px;
+    height:fit-content;
+    padding: 25px;
+   text-align: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+.item_nav {
+    background-color:  #EC4C4C;
+    width: 100px;
+    padding: 0px;
+    height:fit-content;
+    padding: 25px;
+    text-align: center;
+}
+
+#news{
+    display: grid;
+    height: 600px;
+    width: 1400px;
+    grid-template-rows:  1fr 1fr;
+	grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-areas: 
+    "news1 news1 news2"
+    "news3 news3 news4";
+    gap: 5px;
+   
+}
+
+#img1{
+    grid-area: news1;
+    background-color: #EC4C4C;
+    background-image: url("assets/foto1.jpg");
+    background-size: cover;
+    
+
+}
+
+#img1 h1{
+    background-color: #EC4C4C;
+    width: 150px;
+    margin-left: 15px;
+    padding-left: 15px;
+    
+}
+#img1 h2{
+    background-color: #4c7fec;
+    width: 180px;
+    margin-left: 20px;
+    color: whitesmoke;
+}
+
+#img2{
+    grid-area: news2;
+    background-color: #B1B1B1;
+    background-image: url("assets/foto2.jpg");
+    background-size: cover;
+}
+
+#img3{
+    grid-area: news3;
+    background-color: aquamarine;
+    background-image: url("assets/foto3.jpg");
+    background-size: cover;
+    background-position:right;
+}
+#img4{
+    grid-area: news4;
+    background-color: green;
+    background-image: url("assets/foto4.jpg");
+    background-size: cover;
+    
+}
